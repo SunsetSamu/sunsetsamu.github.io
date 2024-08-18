@@ -1,13 +1,13 @@
 .follar {
-    font-size: 5vw;
+    font-size: 10vw;
 	margin: 100px;
-    width: 30px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
 	color: #ffa007;
 }
 .z-text {
-	animation: wobble 12s ease-in-out infinite;
-	transform: rotateX(30deg) rotateY(-30deg);
+	animation: wobble 7s ease-in infinite;
+	transform: rotateX(45deg) rotateY(-45deg);
 }
 
 
@@ -18,15 +18,33 @@
 @keyframes wobble {
 	0%,
 	100% {
-		transform: rotate3d(-1, 1, 0, 30deg);
+		transform: rotate3d(-1, 1, 0, 45deg);
 	}
 	25% {
-		transform: rotate3d(1, 1, 0, 30deg);
+		transform: rotate3d(1, 1, 0, 45deg);
 	}
 	50% {
-		transform: rotate3d(1, -1, 0, 30deg);
+		transform: rotate3d(1, -1, 0, 45deg);
 	}
 	75% {
-		transform: rotate3d(-1, -1, 0, 30deg);
+		transform: rotate3d(-1, -1, 0, 45deg);
 	}
 }
+
+
+html {
+    font-size: 100%; /* Configuración estándar para otros dispositivos */
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 150%; /* Escala todo un 50% más grande en dispositivos móviles */
+    }
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 5;
+    padding: 5;
+}
+
