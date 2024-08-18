@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Precio del Dólar en Venezuela</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/components/prism-javascript.min.js"></script> <!-- Para JavaScript -->
+
 </head>
 <body>
     <div class="container">
@@ -24,12 +29,53 @@
             <button type="submit">Calcular</button>
         </form>
         <div id="result"></div>
-
-
-
-
         <button id="update-button">Actualizar</button>
     </div>
+
+    <br>
+    <hr>
+    <br>
+    <p>Consulta y conversión del dólar en JS con ayuda de <strong>ChatGPT</strong></p>
+    <p>Aclaro esto pues apenas soy aprendíz en el desarrollo web y me<br>interesaba una página funcional con ayuda de JS, que los que<br>sepan pueden corroborar que es un lenguaje bastante denso</p>
+
+
+    <button onclick="toggleCode()">Mostrar/Ocultar Código</button>
+    <div id="code-container" style="display:none;">
+        <pre><code id="code-content" class="language-javascript"></code></pre>
+    </div>
+
+    <script>
+        function toggleCode() {
+            const codeContainer = document.getElementById('code-container');
+            if (codeContainer.style.display === 'none') {
+                codeContainer.style.display = 'block';
+
+                // Cargar el código solo la primera vez que se muestra
+                if (!document.getElementById('code-content').textContent) {
+                    fetch('script.js')
+                        .then(response => response.text())
+                        .then(text => {
+                            document.getElementById('code-content').textContent = text;
+                            Prism.highlightElement(document.getElementById('code-content'));
+                        });
+                }
+            } else {
+                codeContainer.style.display = 'none';
+            }
+        }
+    </script>
+
+
+    <p>Puedes dejar un comentario aquí:</p>
+    <script src="https://utteranc.es/client.js"
+    repo="SunsetSamu/sunsetsamu.github.io"
+    issue-term="pathname"
+    label="Utterances✏️"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+</script>
+
     <script src="script.js"></script>
-</body>
+    </body>
 </html>
