@@ -61,7 +61,8 @@ function calculate(event) {
     }
 
     // Muestra el resultado
-    document.getElementById('result').textContent = `Resultado al Oficial: ${result_of.toFixed(2)} ${conversionType === 'ves-to-usd' ? 'USD' : 'VES'} | Resultado al Paralelo: ${result_pa.toFixed(2)} ${conversionType === 'ves-to-usd' ? 'USD' : 'VES'}`;
+    document.getElementById('result').innerHTML = `Resultado al Oficial: ${result_of.toFixed(2)} ${conversionType === 'ves-to-usd' ? 'USD' : 'VES'}<br>Resultado al Paralelo: ${result_pa.toFixed(2)} ${conversionType === 'ves-to-usd' ? 'USD' : 'VES'}`;
+
 }
 
 // Llamada inicial para cargar las tasas cuando se carga la página
