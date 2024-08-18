@@ -1,33 +1,37 @@
 .follar {
-    font-size: 10vw;
+    font-size: 80px;
 	margin: 100px;
-    width: 10px;
     height: 10px;
 	color: #ffa007;
+    line-height: 75%;
+    text-align: center;
+    position: relative;
+    top: -130px; 
+    letter-spacing: -5pt;
 }
 .z-text {
-	animation: wobble 7s ease-in infinite;
+	animation: wobble 7s ease-in-out infinite;
 	transform: rotateX(45deg) rotateY(-45deg);
 }
 
 
  .z-layer:not(:first-child) {
-    color: #b16735;
+    color: #c34a17;
  
 }
 @keyframes wobble {
 	0%,
 	100% {
-		transform: rotate3d(-1, 1, 0, 45deg);
+		transform: rotate3d(-1, 5, 0, 45deg);
 	}
 	25% {
-		transform: rotate3d(1, 1, 0, 45deg);
+		transform: rotate3d(1, 5, 0, 45deg);
 	}
 	50% {
-		transform: rotate3d(1, -1, 0, 45deg);
+		transform: rotate3d(1, -5, 0, 45deg);
 	}
 	75% {
-		transform: rotate3d(-1, -1, 0, 45deg);
+		transform: rotate3d(-1, -5, 0, 45deg);
 	}
 }
 
