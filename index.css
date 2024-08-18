@@ -1,0 +1,31 @@
+.follar {
+    font-size: 5vw;
+	margin: 100px;
+    width: 10px;
+	color: #ffa007;
+}
+.z-text {
+	animation: wobble 12s ease-in-out infinite;
+	transform: rotateX(30deg) rotateY(-30deg);
+}
+
+
+ .z-layer:not(:first-child) {
+    color: #b16735;
+ 
+}
+@keyframes wobble {
+	0%,
+	100% {
+		transform: rotate3d(-1, 1, 0, 30deg);
+	}
+	25% {
+		transform: rotate3d(1, 1, 0, 30deg);
+	}
+	50% {
+		transform: rotate3d(1, -1, 0, 30deg);
+	}
+	75% {
+		transform: rotate3d(-1, -1, 0, 30deg);
+	}
+}
