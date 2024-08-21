@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precio del Dólar en Venezuela</title>
+    <title>Conversor Bolivares-Dólares</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Vista estándar por defecto -->
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="https://styles.redditmedia.com/t5_7cygh7/styles/profileIcon_soh41nqb9gz91.png?width=256&height=256&frame=1&auto=webp&crop=256:256,smart&s=61cc2e7a4a12e347c72b990a13919428c8dc136f" type="image/png">
     
@@ -13,12 +14,13 @@
 
 </head>
 <body>
-    <div id="blob"></div>
-    <div id="blur"></div>
+    <div id="maximus">
+        <div id="blob"></div>
+    </div>
     
 
     <div class="container">
-        <h1>Precio del Dólar en Venezuela</h1>
+        <h1>Conversor USD-VES</h1>
         <strong>
             <div id="rates">
                 <!-- Los precios se actualizarán aquí -->
@@ -46,8 +48,8 @@
     <div id="FREEVENEZUELA"><p>#FREEVENEZUELA</p></div>
 
     <button onclick="toggleCode()" style="opacity: 0.1; color: rgb(255, 255, 255); background-color: rgb(103, 112, 161);">Mostrar/Ocultar Código Fuente</button>
-    <div id="code-container" style="display:none;"><p class="textodesc">Consulta y conversión del dólar en JS, desarrollado con ayuda de <strong>ChatGPT.</strong><br>Aclaro esto pues apenas soy aprendíz en el desarrollo web y me interesaba una página funcional con ayuda de JS, que los que sepan pueden corroborar que es un lenguaje bastante denso<br><br>@SunsetSamu 2024</p>
-        <pre><code id="code-content" class="language-javascript"></code></pre>
+    <div id="code-container" style="display:none;"><p class="textodesc">Consulta y conversión del dólar en JS, desarrollado con ayuda de <strong>ChatGPT.</strong><br>Aclaro esto pues apenas soy aprendíz en el desarrollo web y me interesaba una página funcional con ayuda de JS, que los que sepan pueden corroborar que es un lenguaje bastante denso</p>
+        <pre id="washu"><code id="code-content" class="language-javascript"></code></pre>
     </div>
 
     <script>
@@ -71,7 +73,7 @@
         }
     </script>
 
-    
+    <p style="opacity: 0.2;">@SunsetSamu 2024</p>
     <script src="script.js"></script>
     </body>
 </html>

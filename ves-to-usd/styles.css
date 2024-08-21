@@ -2,24 +2,37 @@ body {
     font-family: 'Century Gothic';
     background-color: #06030e;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 100px;
+    max-width: 100%;
     overflow-x: hidden;
+
 }
 
 .container {
 
     background: linear-gradient( rgba(165, 253, 224, 0.22), #c0a1fd55);
-    padding: 25px;
+    padding: 20px;
     border-radius: 90px;
     opacity: 0.8;
     mix-blend-mode: overlay;
     display: inline-block;
     z-index: 5;
+
 }
 
 h1 {
-    color: #a498ec;
-    mix-blend-mode: hard-light;
+    
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bolder;
+    background: linear-gradient(to right, #beb5f5, #f38c8c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: color-dodge;
+    margin-top: 0px;
+    margin-bottom: -20px;
+
 }
 
 .textodesc {
@@ -71,21 +84,42 @@ hr {
     margin-right: 15dvw;
 
 }
-
-#blob {
-    background-color: white;
-    height: 60vmax;
-    aspect-ratio: 1;
-    position: absolute;
-    left: 50%;
-    top: 52%;
-    translate: -50% -50%;
-    border-radius: 50%;
-    background: linear-gradient(to right, aquamarine, mediumpurple);
-    opacity: 0.8;
-    animation: rotate 40s infinite;
-    z-index: -5;
-    filter: blur(50px);
+#maximus {
+    margin-left: auto;
+}
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+    #blob {
+        background-color: white;
+        height: 50vmax;
+        aspect-ratio: 1;
+        position: fixed;
+        left: 0%;
+        top: 20%;
+        translate: -50%, -50%;
+        border-radius: 50%;
+        background: linear-gradient(to right, aquamarine, mediumpurple);
+        opacity: 0.8;
+        animation: rotate 40s infinite;
+        z-index: -5;
+        filter: blur(50px);
+    }
+}
+@media only screen and (min-width: 780px) {
+    #blob {
+        background-color: white;
+        height: 50vmax;
+        aspect-ratio: 1;
+        position: fixed;
+        left: 50%;
+        top: 40%;
+        translate: -50% -50%;
+        border-radius: 50%;
+        background: linear-gradient(to right, aquamarine, mediumpurple);
+        opacity: 0.8;
+        animation: rotate 40s infinite;
+        z-index: -5;
+        filter: blur(50px);
+    }
 }
 
 form {
@@ -115,5 +149,18 @@ input, select, button {
     -webkit-text-fill-color: transparent;
     mix-blend-mode: color-dodge;
     margin-top: -10px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    #washu {    
+        position: absolute;
+        max-width: 50%;
+        left: 25%;
+        margin-bottom: 50px;
+    }
+}
+#washu {
+    mix-blend-mode: overlay;
 }

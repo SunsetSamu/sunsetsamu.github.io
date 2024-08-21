@@ -1,6 +1,17 @@
 document.getElementById('update-button').addEventListener('click', updateRates);
 document.getElementById('calculator-form').addEventListener('submit', calculate);
 
+$(function() {
+    var $body = $(document);
+    $body.bind('scroll', function() {
+      // "Disable" the horizontal scroll.
+      if ($body.scrollLeft() !== 0) {
+        $body.scrollLeft(0);
+      }
+    });
+  });
+  
+
 let tasas = {};
 
 function updateRates() {
