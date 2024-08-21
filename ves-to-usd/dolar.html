@@ -13,35 +13,40 @@
 
 </head>
 <body>
+    <div id="blob"></div>
+    <div id="blur"></div>
+    
+
     <div class="container">
         <h1>Precio del Dólar en Venezuela</h1>
-        <div id="rates">
-            <!-- Los precios se actualizarán aquí -->
-        </div>
-
+        <strong>
+            <div id="rates">
+                <!-- Los precios se actualizarán aquí -->
+                
+            </div> <button id="update-button">Actualizar</button>
+        </strong>    
         <!--CALCULADORA-->
+        <div id="result"></div>
         <form id="calculator-form">
             <input type="number" id="amount" placeholder="Ingrese el monto" step="any" required>
 
             <select id="conversion-type">
-                <option value="ves-to-usd">VES a USD</option>
                 <option value="usd-to-ves">USD a VES</option>
+                <option value="ves-to-usd">VES a USD</option>
             </select>
             <button type="submit">Calcular</button>
         </form>
-        <div id="result"></div>
-        <button id="update-button">Actualizar</button>
+        
+        
     </div>
-
+    <br>
     <br>
     <hr>
-    <br>
-    <p>Consulta y conversión del dólar en JS, desarrollado con ayuda de <strong>ChatGPT</strong></p>
-    <p>Aclaro esto pues apenas soy aprendíz en el desarrollo web y me<br>interesaba una página funcional con ayuda de JS, que los que<br>sepan pueden corroborar que es un lenguaje bastante denso</p>
 
+    <div id="FREEVENEZUELA"><p>#FREEVENEZUELA</p></div>
 
-    <button onclick="toggleCode()">Mostrar/Ocultar Código</button>
-    <div id="code-container" style="display:none;">
+    <button onclick="toggleCode()" style="opacity: 0.1; color: rgb(255, 255, 255); background-color: rgb(103, 112, 161);">Mostrar/Ocultar Código Fuente</button>
+    <div id="code-container" style="display:none;"><p class="textodesc">Consulta y conversión del dólar en JS, desarrollado con ayuda de <strong>ChatGPT.</strong><br>Aclaro esto pues apenas soy aprendíz en el desarrollo web y me interesaba una página funcional con ayuda de JS, que los que sepan pueden corroborar que es un lenguaje bastante denso<br><br>@SunsetSamu 2024</p>
         <pre><code id="code-content" class="language-javascript"></code></pre>
     </div>
 
@@ -66,17 +71,7 @@
         }
     </script>
 
-
-    <p>Puedes dejar un comentario aquí:</p>
-    <script src="https://utteranc.es/client.js"
-    repo="SunsetSamu/sunsetsamu.github.io"
-    issue-term="pathname"
-    label="Utterances✏️"
-    theme="github-light"
-    crossorigin="anonymous"
-    async>
-</script>
-
+    
     <script src="script.js"></script>
     </body>
 </html>

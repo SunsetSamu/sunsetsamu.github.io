@@ -1,20 +1,34 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Century Gothic';
+    background-color: #06030e;
     text-align: center;
     margin-top: 50px;
+    overflow-x: hidden;
 }
 
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    background: linear-gradient( rgba(165, 253, 224, 0.22), #c0a1fd55);
+    padding: 25px;
+    border-radius: 90px;
+    opacity: 0.8;
+    mix-blend-mode: overlay;
     display: inline-block;
+    z-index: 5;
 }
 
 h1 {
-    color: #333;
+    color: #a498ec;
+    mix-blend-mode: hard-light;
+}
+
+.textodesc {
+
+    color: #fff;
+    font-style: inherit;
+    margin-left: 10dvw;
+    margin-right: 10dvw;
+
 }
 
 #rates {
@@ -24,21 +38,58 @@ h1 {
 
 button {
     margin-top: 20px;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 1em;
-    border: none;
-    background-color: #007BFF;
-    color: #fff;
-    border-radius: 5px;
+
+    background-color: #937acd;
+    color: #ffffff;
+
+    mix-blend-mode: overlay;
+    border-radius: 50px;
     cursor: pointer;
+    z-index: 7;
 }
 
-button:hover {
-    background-color: #0056b3;
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+}
+
+hr {
+    color: #798390;
+    mix-blend-mode: screen;
+    margin-left: 15dvw;
+    margin-right: 15dvw;
+
+}
+
+#blob {
+    background-color: white;
+    height: 60vmax;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 52%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    opacity: 0.8;
+    animation: rotate 40s infinite;
+    z-index: -5;
+    filter: blur(50px);
 }
 
 form {
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 input, select, button {
@@ -48,6 +99,21 @@ input, select, button {
 }
 
 #result {
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: bold;
+    
+}
+
+#FREEVENEZUELA {
+    
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bolder;
+    background: linear-gradient(to right, #5439eb, #d25e5e);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    mix-blend-mode: color-dodge;
+    margin-top: -10px;
+    margin-bottom: 80px;
 }
