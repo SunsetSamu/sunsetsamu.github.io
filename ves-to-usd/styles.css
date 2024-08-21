@@ -87,7 +87,7 @@ hr {
 #maximus {
     margin-left: auto;
 }
-@media only screen and (min-width: 375px) and (max-width: 768px) {
+@media only screen and (min-width: 375px) and (max-width: 779px) {
     #blob {
         background-color: white;
         height: 50vmax;
