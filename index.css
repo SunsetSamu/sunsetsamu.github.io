@@ -1,50 +1,33 @@
-.follar {
-    font-size: 80px;
-	margin: 100px;
-    height: 10px;
-	color: #ffa007;
-    line-height: 75%;
-    text-align: center;
-    position: relative;
-    top: -130px; 
-    letter-spacing: -5pt;
-}
-.z-text {
-	animation: wobble 7s ease-in-out infinite;
-	transform: rotateX(45deg) rotateY(-45deg);
-}
-
-
- .z-layer:not(:first-child) {
-    color: #c34a17;
- 
-}
-@keyframes wobble {
-	0%,
-	100% {
-		transform: rotate3d(-1, 5, 0, 45deg);
-	}
-	25% {
-		transform: rotate3d(1, 5, 0, 45deg);
-	}
-	50% {
-		transform: rotate3d(1, -5, 0, 45deg);
-	}
-	75% {
-		transform: rotate3d(-1, -5, 0, 45deg);
-	}
-}
-
-
 html {
     font-size: 100%; /* Configuración estándar para otros dispositivos */
+	background-color: #08070e;
+	color: rgb(151, 248, 144);
 }
 
-@media only screen and (max-width: 768px) {
-    html {
-        font-size: 150%; /* Escala todo un 50% más grande en dispositivos móviles */
-    }
+h1 {
+	font-size: 400%;
+	font-style: italic;
+	font-weight: bolder;
+	background: linear-gradient(to right, #beb5f5, #f38c8c);
+	color: #08070e;
 }
+
+h2 {
+	font-size: 200%;
+	font-style: italic;
+	font-weight: bolder;
+	background: linear-gradient(to right, #beb5f5, #f38c8c);
+	color: #08070e;
+}
+
+[id="watermark"] {
+	font-size: 70%;
+	margin-top: -49px;
+	margin-left: 30px;
+	color: #08070e;
+}
+
+
 body {
     max-width: 100%;
     overflow-x: hidden;
