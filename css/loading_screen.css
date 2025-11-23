@@ -1,0 +1,91 @@
+.loading_screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    pointer-events: none;
+    user-select: none
+}
+
+.loading_dongle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.loading_bg {
+    background-color: #232634;
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    z-index: 5;
+}
+
+.vignette {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(0,0,0,0) 10%,
+      rgba(0,0,0,0.2) 40%,
+      rgba(0,0,0,0.4) 60%,
+      rgba(0,0,0,0.6) 80%
+    );
+
+    pointer-events: none;
+    z-index: 6;
+    animation: in-out 4s ease-in-out infinite;
+}
+  
+@keyframes in-out {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+}
+
+
+.png-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+
+.dongle-layer5 {
+    animation: floating 3s ease-in-out infinite;
+    filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.5));
+}
+
+.dongle-layer4 {
+    animation: floating 2.2s ease-in-out infinite;
+    filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.5));
+}
+
+.dongle-layer3 {
+    animation: rotation 7s linear infinite;
+}
+
+.dongle-layer2 {
+    filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.5));
+}
+
+.dongle-layer1 {
+    animation: rotation 60s linear infinite;
+}
+
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+
+@keyframes floating {
+    0%, 100% { transform: translateY(5px); }
+    50% { transform: translateY(-5px); }
+}
+
+
