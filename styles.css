@@ -1,6 +1,6 @@
 body {
     background-color: #232634;
-
+    padding: 2lh;
     color: #c6d0f5;
     font-size: larger;
     font-family: "Ubuntu Mono", monospace;
@@ -25,3 +25,11 @@ strong {
     font-style: normal;
   }
     
+a {
+    color: #e5c890;
+    text-decoration:  underline wavy;
+}
+
+hr {
+    border: none; 
+}
