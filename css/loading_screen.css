@@ -21,7 +21,7 @@
 .loading_bg {
     background-color: #232634;
     position: absolute;
-    width: 100%;
+    width: 110%;
     height: 110%;
     z-index: 5;
 }
