@@ -1,0 +1,78 @@
+<!doctype html>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image" href="../assets\Imagen2.png" />
+
+
+  <title>Welcome to the Sunset's Web Page :3</title>
+  <script type="module" crossorigin src="../index_script.js"></script>
+  <link rel="stylesheet" crossorigin href="../styles.css">
+  <link rel="stylesheet" crossorigin href="../css/carousel.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0x" />
+</head>
+
+<body style="overflow-x: hidden;">
+    <h1>CAROUSEL TEST</h1>
+    <p>here will be a carousel</p>
+    <p>Also, this is an excuse for putting a lot of kimiko images here, uwu</p>
+    <hr>
+    <hr>
+    <hr>
+
+    <div id="carousel-container">
+        <ul class="carousel">
+            <li><a href="../assets/example_images/kimiko_example_img (1).jpg"><img src="../assets/example_images/kimiko_example_img (1).jpg" alt="kimiko"></a></li>
+            <li><a href="../assets/example_images/kimiko_example_img (2).jpg"><img src="../assets/example_images/kimiko_example_img (2).jpg" alt="kimiko"></a></li>
+            <li><a href="../assets/example_images/kimiko_example_img (3).jpg"><img src="../assets/example_images/kimiko_example_img (3).jpg" alt="kimiko"></a></li>
+        </ul>
+        <img class="scroll-button left" src="../assets/elements/sunset_web_elements_022.png" alt="scroll-button">
+        <img class="scroll-button right" src="../assets/elements/sunset_web_elements_022.png" alt="scroll-button">
+        <script>
+            document.querySelectorAll('.scroll-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const carousel = document.querySelector('.carousel');
+                    const scrollAmount = carousel.clientWidth; // Ancho visible del carrusel
+
+                    if (button.classList.contains('right')) {
+                        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    } else {
+                        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    }
+                });
+            });
+        </script>
+    </div>
+
+    <div id="carousel-container">
+        <ul class="carousel">
+            <li><a href="../assets/example_images/kimiko_example_img (1).png"><img src="../assets/example_images/kimiko_example_img (1).png" alt="kimiko"></a></li>
+            <li><a href="../assets/example_images/kimiko_example_img (2).png"><img src="../assets/example_images/kimiko_example_img (2).png" alt="kimiko"></a></li>
+            <li><a href="../assets/example_images/kimiko_example_img (3).png"><img src="../assets/example_images/kimiko_example_img (3).png" alt="kimiko"></a></li>
+            <li><a href="../assets/example_images/kimiko_example_img (4).png"><img src="../assets/example_images/kimiko_example_img (4).png" alt="kimiko"></a></li>
+            <li><a href="../assets/example_images/kimiko_example_img (5).png"><img src="../assets/example_images/kimiko_example_img (5).png" alt="kimiko"></a></li>
+        </ul>
+        <img class="scroll-button left" src="../assets/elements/sunset_web_elements_022.png" alt="scroll-button">
+        <img class="scroll-button right" src="../assets/elements/sunset_web_elements_022.png" alt="scroll-button">
+        <script>
+            document.querySelectorAll('.scroll-button').forEach(button => {
+                button.addEventListener('click', () => {
+                    const carouselContainer = button.closest('#carousel-container');
+                    const carousel = carouselContainer.querySelector('.carousel');
+                    const scrollAmount = carousel.clientWidth;
+
+                    if (button.classList.contains('right')) {
+                        carousel.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    } else {
+                        carousel.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    }
+                });
+            });
+        </script>
+    </div>
+
+</body>

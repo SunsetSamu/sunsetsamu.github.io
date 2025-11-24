@@ -1,0 +1,96 @@
+#carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-width: 42lh;
+    max-height: 42lh;
+    height: auto;
+    width: auto;
+}
+
+#carousel-container .carousel {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    max-width: 42lh;
+    max-height: 42lh;
+    background-color: #303446;
+    padding-right: 40px;
+
+
+    display: flex;
+    
+    flex-direction: row;
+    list-style: none;
+    
+    > li {
+        display: flex;
+        justify-content: center;
+        scroll-snap-align: center;
+        
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+
+
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 1lh;
+        margin-right: 1lh;
+
+        flex-shrink: 0;
+
+        > a {
+            > img {
+                max-width: 100%;
+                max-height: 100%;
+                object-fit: contain;
+                height: auto;
+                width: auto;
+            }
+        }
+    }
+
+  }
+
+
+#carousel-container .scroll-button {
+    position: absolute;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    object-fit: contain;
+    border-color: transparent;
+    background-color: transparent;
+    background-size: 10lh;
+    background-position: 7.5lh;
+    max-width: 7lh;
+    max-height: 7lh;
+
+    top: 50%;
+
+    z-index: 10;
+}
+
+#carousel-container .left {
+    content: "Scroll Left";
+    transform: rotateY(180deg) translateY(-50%);
+    margin-right: 90%;
+}
+
+#carousel-container .left:hover {
+    transform: rotateY(180deg)  translateY(-50%) scale(1.2);
+}
+
+#carousel-container .right {
+    content: "Scroll Right";
+    transform: translateY(-50%);
+    margin-left: 90%;
+}
+
+#carousel-container .right:hover {
+    transform: translateY(-50%) scale(1.2);
+}
