@@ -18,14 +18,14 @@ h1 {
     font-weight: 400;
     font-style: normal;
     filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.5));
-  }
+}
 
   
 strong {
     font-family: "Ubuntu Mono", monospace;
     font-weight: 700;
     font-style: normal;
-  }
+}
     
 a {
     color: #e5c890;
@@ -34,4 +34,15 @@ a {
 
 hr {
     border: none; 
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background-color: #00000000;
+}
+
+button img {
+  max-width: 10lh;
+  max-height: 10lh;
 }

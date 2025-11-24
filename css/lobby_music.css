@@ -1,0 +1,19 @@
+#lobby_music_toggle {
+    position: relative;
+
+    user-select: none;
+    width: 7lh;
+    height: 3lh;
+}
+
+#lobby_music_toggle .music_button {
+    position: absolute;
+    pointer-events: none;
+    user-select: none;
+    top: -3.4lh;
+    left: -1.5lh;
+    transition: opacity 0.3s ease;
+}
+#lobby_music_toggle .music_button:not(.active) {
+    opacity: 0;
+  }
