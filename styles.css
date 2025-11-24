@@ -47,3 +47,9 @@ button img {
   max-height: 10lh;
 }
 
+/* Configuraciones particulares para clases simples*/
+
+.onClickSFX-back {cursor: pointer;}
+.onClickSFX-move {cursor: pointer;}
+.onClickSFX-error {cursor: pointer;}
+.onClickSFX-select {cursor: pointer;}
