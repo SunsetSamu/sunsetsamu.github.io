@@ -27,7 +27,9 @@
     z-index: 5;
 }
 
-.loading_text {margin-top: 5.2lh; z-index: 1000;}
+.loading_text {
+    margin-top: 5.2lh; z-index: 1000;
+}
 
 .vignette {
     position: absolute;
