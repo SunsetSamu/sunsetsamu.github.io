@@ -1,0 +1,35 @@
+html.js-cursor-active,
+html.js-cursor-active * {
+    cursor: none !important;
+}
+
+/* Tu CSS normal (mantén tus estilos existentes) */
+a, button, .clickable {
+    cursor: pointer; /* Esto será detectado por JS */
+}
+
+
+/* Estilos del cursor personalizado */
+#custom-cursor {
+    position: fixed;
+    width: 32px;
+    height: 32px;
+    pointer-events: none;
+    z-index: 99999;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('../assets/elements/sunset_web_elements_025.png'); /* Imagen por defecto */
+    transform: translate(-10%, -10%);
+    transition: background-image 0.1s;
+    display: none; /* Oculto hasta que JS cargue */
+}
+
+html.js-cursor-active #custom-cursor {
+    display: block;
+}
+
+/* Asegúrate de que estos elementos tengan la clase o sean detectables */
+a, button, .btn, .clickable {
+    /* Puedes mantener o quitar cursor: pointer, ya no es necesario */
+    cursor: pointer;
+}
