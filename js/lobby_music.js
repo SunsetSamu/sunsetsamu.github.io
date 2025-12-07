@@ -1,4 +1,4 @@
-const music = new Audio('../assets/untitled_3 v2.mp3');
+const music = new Audio('/assets/untitled_3 v2.mp3');
 music.loop = true;
 
 const volumeSlider = document.getElementById('volumeSlider');

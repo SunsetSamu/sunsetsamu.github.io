@@ -18,7 +18,7 @@ a, button, .clickable {
     z-index: 99999;
     background-size: contain;
     background-repeat: no-repeat;
-    background-image: url('../assets/elements/sunset_web_elements_025.png'); /* Imagen por defecto */
+    background-image: url('/assets/elements/sunset_web_elements_025.png'); /* Imagen por defecto */
     transform: translate(-10%, -10%);
     transition: background-image 0.1s;
     display: none; /* Oculto hasta que JS cargue */

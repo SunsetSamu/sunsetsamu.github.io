@@ -1,10 +1,10 @@
-const clickBack = new Audio('../assets/ClickSFX/pod_back.wav')
+const clickBack = new Audio('/assets/ClickSFX/pod_back.wav')
 clickBack.volume = 0.3
-const clickMove = new Audio('../assets/ClickSFX/pod_cursor_move.wav')
+const clickMove = new Audio('/assets/ClickSFX/pod_cursor_move.wav')
 clickMove.volume = 0.3
-const clickError = new Audio('../assets/ClickSFX/pod_error_01.wav')
+const clickError = new Audio('/assets/ClickSFX/pod_error_01.wav')
 clickError.volume = 0.3
-const clickSelect = new Audio('../assets/ClickSFX/pod_select.wav')
+const clickSelect = new Audio('/assets/ClickSFX/pod_select.wav')
 clickSelect.volume = 0.3
 
 document.addEventListener('click', (event) => {

@@ -1,8 +1,11 @@
 button.pretty_buttons {
     display: flex;
-    width: 40lh;
+    width: 100%;
     max-height: 11lh;
     max-width: 40lh;
+
+    margin-inline-start: auto;
+    margin-inline-end: auto;
 
     background-color: rgb(65, 69, 89);
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
@@ -28,7 +31,8 @@ button.pretty_buttons {
         font-size: 5lh;
         align-self: center;
         text-align: center;
-
+        height: fit-content;
+        
         transform: scale(1) rotate(-2deg);
 
         transform-origin: center;

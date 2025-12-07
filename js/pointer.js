@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     function updateCursorImage(isClickable) {
-        const basePath = '../assets/elements/';
+        const basePath = '/assets/elements/';
         let cursorImage = 'sunset_web_elements_025.png';
         
         if (isMouseDown) {

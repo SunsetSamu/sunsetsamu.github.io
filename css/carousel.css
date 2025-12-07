@@ -7,6 +7,9 @@
     max-height: 42lh;
     height: auto;
     width: auto;
+
+    margin-inline-start: auto;
+    margin-inline-end: auto;
 }
 
 #carousel-container .carousel {
