@@ -1,3 +1,15 @@
+/* IMPORTS */
+@import url(/css/banner.css);
+@import url(/css/decorators.css);
+@import url(css/carousel.css);
+@import url(css/loading_screen.css);
+@import url(css/lobby_music.css);
+@import url(css/newsletter_box.css);
+@import url(css/pointer.css);
+@import url(css/pretty_buttons.css);
+
+/* GENERALES */
+
 body {
     background-color: #232634;
     padding: 2lh;
@@ -25,6 +37,10 @@ h1 {
     text-align: center;
 }
 
+p, a {
+    filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.7));
+}
+
   
 strong {
     font-family: "Ubuntu Mono", monospace;
@@ -46,23 +62,6 @@ article {
     padding: 1lh;
 }
 
-hr {
-    border: none; 
-
-    background-image: url(/assets/elements/sunset_web_elements_012.png);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    margin-top: 1.5lh;
-    margin-bottom: 1.5lh;
-
-    height: 4lh;
-    max-width: 30lh;
-    min-width: 20lh;
-
-}
-
 button {
   border: 0;
   cursor: pointer;
@@ -80,9 +79,5 @@ img {
     margin-inline-start: auto;
     margin-inline-end: auto;
 }
-/* Configuraciones particulares para clases simples*/
 
-.onClickSFX-back {cursor: pointer;}
-.onClickSFX-move {cursor: pointer;}
-.onClickSFX-error {cursor: pointer;}
-.onClickSFX-select {cursor: pointer;}
+

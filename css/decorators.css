@@ -1,0 +1,45 @@
+/* DECORADORES */
+
+hr {
+    border: none; 
+
+    background-image: url(/assets/elements/sunset_web_elements_012.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-top: 1.5lh;
+    margin-bottom: 1.5lh;
+
+    height: 4lh;
+    max-width: 30lh;
+    min-width: 20lh;
+}
+
+hr, .decorator {
+    filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.2));
+    margin-inline: auto;
+}
+
+div.wip_deco {
+    position: relative;
+    display: block;
+
+    background-image: url(/assets/elements/sunset_web_elements_019.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center 40%;
+
+    margin-top: 5lh;
+    margin-bottom: -3lh;
+
+    height: 10lh;
+    max-width: 30lh;
+    min-width: 20lh;
+
+    > p {
+        position: relative;
+        text-align: center;
+        top: -2.5lh;
+    }
+}
