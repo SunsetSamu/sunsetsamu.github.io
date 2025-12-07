@@ -1,0 +1,77 @@
+article.newsletter_box {
+    position: relative;
+    max-width: 30lh;
+    min-width: 20lh;
+    width: auto;
+    max-height: 30lh;    
+    min-height: 20lh;
+    height: auto;
+    margin-inline: auto;
+    padding: 1lh;
+    box-sizing: border-box;
+    aspect-ratio: 1 / 1;
+
+    > .boxframe {
+        position: absolute;
+        width: 110%;
+        height: 110%;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+
+        background-image: url(/assets/elements/sunset_web_elements_005.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-position: center center;
+        
+        z-index: 2;
+        pointer-events: none;
+    }
+    > .newsletter_container {
+        overflow: hidden;
+        overflow-y: visible;
+        position: absolute;
+        width: 99%;
+        height: 99%;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        z-index: 1;
+        > ul {
+        
+            list-style: none;
+            margin: 0;
+            padding: 1lh;
+            overflow: hidden;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap: 1lh;
+    
+            > li {
+                background-color: #737994;
+                width: auto;
+                
+
+                > a {> img {
+                    aspect-ratio: 3 / 1;
+                    position: relative;
+                    width: auto;
+                    height: auto;
+                    object-fit: cover;
+                    object-position: center center;
+                }}
+            }
+    
+        }
+    }
+}

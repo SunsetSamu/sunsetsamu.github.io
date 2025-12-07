@@ -40,6 +40,10 @@ a {
 article {
     margin-inline-start: auto;
     margin-inline-end: auto;
+
+    max-width: 45lh; 
+    background-color: #303446; 
+    padding: 1lh;
 }
 
 hr {
@@ -70,6 +74,12 @@ button img {
   max-height: 10lh;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
 /* Configuraciones particulares para clases simples*/
 
 .onClickSFX-back {cursor: pointer;}

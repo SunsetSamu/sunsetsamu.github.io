@@ -5,7 +5,13 @@
     align-items: center;
     margin: -2.55lh;
     height: 100vh;
-    width: 100%;
+
+    width: 100vw; /* Ancho completo del viewport */
+    max-width: none; /* Elimina cualquier max-width heredada */
+    margin-left: calc(-50vw + 50%); /* Centrado si es necesario */  
+    left: 0;
+
+
     pointer-events: none;
     user-select: none;
     z-index: 99;
