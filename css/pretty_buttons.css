@@ -31,6 +31,7 @@ button.pretty_buttons {
         }
     }
     > p {
+        filter: unset;
         flex: 3;
         height: 1lh;
         font-size: 5lh;

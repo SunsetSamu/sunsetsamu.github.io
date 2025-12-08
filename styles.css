@@ -19,8 +19,7 @@ body {
     font-weight: 400;
     font-style: normal;
 
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+    margin-inline: auto;
     max-width: 60lh;
 }
 
@@ -37,8 +36,10 @@ h1 {
     text-align: center;
 }
 
-p, a {
+p, ul {
     filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.7));
+    margin-inline: auto;
+    max-width: 45lh;
 }
 
   
@@ -46,6 +47,7 @@ strong {
     font-family: "Ubuntu Mono", monospace;
     font-weight: 700;
     font-style: normal;
+    color: rgb(140, 170, 238);
 }
     
 a {
@@ -60,6 +62,22 @@ article {
     max-width: 45lh; 
     background-color: #303446; 
     padding: 1lh;
+}
+
+ul {
+    list-style-type: "✦ ";
+    color: #e5c890;
+}
+
+section {
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+
+    min-width: 16lh;
+    max-width: 20lh; 
+    background-color: rgb(65, 69, 89); 
+    padding: 1lh;
+    padding-top: 0.1lh;
 }
 
 button {
