@@ -8,6 +8,8 @@ div.banner {
     overflow: hidden;
     z-index: -10;
     min-width: 16lh;
+    pointer-events: none;
+    user-select: none;
     > div.gradient {
         position: absolute;
         display: block;
@@ -27,3 +29,39 @@ div.banner {
         z-index: 1;
     }
 }
+
+div.megabanner {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    margin-top: -4lh;
+    margin-bottom: 0lh;
+    height: 95vh;
+    overflow: hidden;
+    
+    z-index: 0;
+
+    min-width: 400px;
+    
+    /* Imagen de fondo con efecto fixed */
+    background-image: url('/assets/banner vgen_test.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+
+    > svg {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        
+        object-fit: cover;
+        object-position: bottom center;
+        z-index: 1;
+    }
+}
+
+

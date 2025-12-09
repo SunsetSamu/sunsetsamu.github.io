@@ -8,6 +8,13 @@
   <script type="module" crossorigin src="/index_script.js"></script>
   <link rel="stylesheet" crossorigin href="/styles.css">
 
+  
+  <link rel="stylesheet" crossorigin href="/css/pointer.css">
+  <script type="module" crossorigin src="/js/pointer.js"></script>
+  
+  <script type="module" crossorigin src="/js/click-sfx.js"></script>
+
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dongle&family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -16,31 +23,74 @@
 </head>
 
 <body style="overflow-x: hidden;">
-  <h1>test page</h1>
+
+  <div class="megabanner">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#232634" fill-opacity="1" d="M0,32L21.8,58.7C43.6,85,87,139,131,149.3C174.5,160,218,128,262,122.7C305.5,117,349,139,393,165.3C436.4,192,480,224,524,229.3C567.3,235,611,213,655,202.7C698.2,192,742,192,785,208C829.1,224,873,256,916,229.3C960,203,1004,117,1047,122.7C1090.9,128,1135,224,1178,266.7C1221.8,309,1265,299,1309,250.7C1352.7,203,1396,117,1418,74.7L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
+    
+  </div>
   
-  <div class="banner"><div class="gradient"></div><img src="/assets/banner vgen_test.png" alt="banner test"></div>
-  
-  
-  
-  <p>I'm sunset uwu, how awe yow? uwu</p>
-  <p><strong>BTW all the assets are very very unoptimized.</strong></p>
-  <p><strong>I will convert them ASAP the page is complete.</strong></p>
+  <p style="text-align: center;"><a href="#">Show more</a></p>
+  <hr style="background: none; height: 10lh;">
+
+  <h1>Newsletter</h1>
+  <div style="transform: translateX(220%) translateY(0%);" class="star1_deco decorator"></div>
+  <article class="newsletter_box">
+    <div class="boxframe"></div>
+    <div class="newsletter_container">
+        <ul>
+            <li>
+                <a href="/tests/loading_screen_test.html">
+                    <img class="clickable onClickSFX-select" src="/assets/example_images/kimiko_example_img (4).jpg" alt="element">
+                </a>
+            </li>
+        </ul>
+    </div>
+  </article>
+  <div style="transform: translateX(-220%) translateY(-70%);" class="star1_deco decorator"></div>
+
+  <div class="minisamael_deco decorator"><img src="/assets/elements/sunset_web_elements_002.png" alt="little deco"></div>
+
   <hr>
+  <div class="grid_container">
+    
+    <button class="pretty_buttons clickable" onclick="window.location.href='#'"><div><img class="clickable" src="/assets/elements/sunset_web_elements_009.png" alt="placeholder button"></div><p class="clickable onClickSFX-select">My Artworks</p></button>
+    <button class="pretty_buttons clickable onClickSFX-select" onclick="window.location.href='#'"><div><img class="clickable onClickSFX-select" src="/assets/elements/sunset_web_elements_011.png" alt="placeholder button"></div><p class="clickable onClickSFX-select">My Music</p></button>
+    <button style="display: none" onmouseover="this.style.backgroundColor='#e78284';" onmouseout="this.style.backgroundColor='';" class="pretty_buttons clickable onClickSFX-error"><div><img class="clickable onClickSFX-select" src="/assets/elements/sunset_web_elements_008.png" alt="placeholder button"></div><p class="clickable onClickSFX-select">Someday...</p></button>
+    <button class="pretty_buttons clickable onClickSFX-select" onclick="window.location.href='#'"><div><img class="clickable onClickSFX-select" src="/assets/elements/sunset_web_elements_010.png" alt="placeholder button"></div><p class="clickable onClickSFX-select">Hi my name is...</p></button>
+
+  </div>
+  <hr>
+
+  <h1>Artist Friends :3</h1>
+  <div style="transform: translateX(220%) translateY(0%);" class="star1_deco decorator"></div>
+  <article class="newsletter_box">
+    <div class="boxframe"></div>
+    <div class="newsletter_container">
+        <ul>
+            <li>
+                <a href="/tests/loading_screen_test.html">
+                    <img class="clickable onClickSFX-select" src="/assets/example_images/kimiko_example_img (4).jpg" alt="element">
+                </a>
+            </li>
+        </ul>
+    </div>
+  </article>
+  <div style="transform: translateX(-220%) translateY(-70%);" class="star1_deco decorator"></div>
+
+  <div class="starry_deco decorator"><img src="assets/elements/sunset_web_elements_013.png" alt="little deco"></div>
+  
   <section>
-    <p>Etos son awgunos tests de pa pawinita owo:</p>
+    <p style="text-align: center;">Quick Access Links:</p>
     <ul>
-      <li><a href="/tests/loading_screen_test.html">loading screen test owo</a></p></li>
-      <li><a href="/tests/load_test.html">heavy load dongle loading test</a></p></li>
-      <li><a href="404.html">404 page uwu</a></p></li>
-      <li><a href="/tests/lobby_music1.html">lobby music test ewe</a></p></li>
-      <li><a href="/tests/carousel_test.html">carousel test amazing oaoaoaoa</a></p></li>
-      <li><a href="/tests/click-sfx-test.html">Clicking SFXs test</a></p></li>
-      <li><a href="/tests/custom_pointer_test.html">Custom Cursor on PC test</a></p></li>
-      <li><a href="/tests/Buttons_test.html">P R E T T Y - B U T T O N S</a></p></li>
-      <li><a href="/tests/newsletter_test.html">Newsletter test</a></p></li>
+      <li><a class="onClickSFX-select" href="https://vgen.co/SunsetSamu">VGen (commissions)</a></p></li>
+      <li><a class="onClickSFX-select" href="https://x.com/SunsetSamu">Twitter / X</a></p></li>
+      <li><a class="onClickSFX-select" href="https://instagram.com/SunsetSamu">Instagram</a></p></li>
+      <li><a class="onClickSFX-select" href="https://youtube.com/@SunsetSamu">YouTube Channel (Art)</a></p></li>
+      <li><a class="onClickSFX-select" href="https://youtube.com/@Sunsenite">YouTube Channel (Music)</a></p></li>
     </ul>
   </section> 
 
-  <div class="wip_deco decorator"><p>More work in progress !!!<br><a href="/">:\SunsetSamu</a></p></div>
+  <div class="wip_deco decorator"><p>More work in progress !!!<br><a class="onClickSFX-select onClickSFX-select" href="#">:\SunsetSamu</a></p></div>
+  <div id="custom-cursor"></div>
 </body>
 

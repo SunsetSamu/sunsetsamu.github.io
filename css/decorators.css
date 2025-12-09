@@ -4,7 +4,7 @@ hr {
     border: none; 
 
     background-image: url(/assets/elements/sunset_web_elements_012.png);
-    background-size: 100% auto;
+    background-size: 60% auto;
     background-repeat: no-repeat;
     background-position: center;
 
@@ -19,6 +19,7 @@ hr {
 hr, .decorator {
     filter: drop-shadow(5px 5px 2px rgba(0,0,0,0.2));
     margin-inline: auto;
+    pointer-events: none;
 }
 
 div.wip_deco {
@@ -42,4 +43,79 @@ div.wip_deco {
         text-align: center;
         top: -2.5lh;
     }
+}
+
+div.starry_deco {
+    position: relative;
+    display: block;
+
+    background-image: url(../assets/elements/sunset_web_elements_018.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center 55%;
+
+    margin-top: 5lh;
+    margin-bottom: 0.5lh;
+
+    height: 10lh;
+    max-width: 30lh;
+    min-width: 20lh;
+
+    > img {
+        max-width: 10lh;
+        transform: translateY(-50%);
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+div.minisamael_deco {
+    position: relative;
+    display: block;
+
+    background-image: url(../assets/elements/sunset_web_elements_006.png);
+    background-size: 35% auto;
+    background-repeat: no-repeat;
+    background-position: center 55%;
+
+    transform: translateX(-10%);
+
+    margin-top: -9lh;
+    margin-bottom: -5lh;
+
+    height: 20lh;
+    max-width: 30lh;
+    min-width: 20lh;
+
+    z-index: 10;
+
+    > img {
+        max-width: 12lh;
+        transform: translateY(10%) translateX(55%) rotate(20deg);
+        pointer-events: none;
+        user-select: none;
+        
+    }
+}
+
+div.star1_deco {
+    position: relative;
+    display: block;
+
+    background-image: url(../assets/elements/sunset_web_elements_003.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center 55%;
+
+    margin-bottom: -5lh;
+
+    max-width: 5lh;
+    min-width: 5lh;
+    width: auto;
+    max-height: 5lh;    
+    min-height: 5lh;
+    height: auto;
+
+    z-index: 10;
+
 }

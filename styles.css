@@ -1,12 +1,11 @@
 /* IMPORTS */
 @import url(/css/banner.css);
 @import url(/css/decorators.css);
-@import url(css/carousel.css);
-@import url(css/loading_screen.css);
-@import url(css/lobby_music.css);
-@import url(css/newsletter_box.css);
-@import url(css/pointer.css);
-@import url(css/pretty_buttons.css);
+@import url(/css/carousel.css);
+@import url(/css/loading_screen.css);
+@import url(/css/lobby_music.css);
+@import url(/css/newsletter_box.css);
+@import url(/css/pretty_buttons.css);
 
 /* GENERALES */
 
@@ -99,3 +98,20 @@ img {
 }
 
 
+div.grid_container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Esto centrará los elementos */
+    gap: 10px; /* Espacio entre elementos */
+
+    > * {
+        flex: 0 0 calc(50% - 10px);
+        @media (max-width: 45lh) {
+            flex: 0 0 100%;
+        }
+    }
+    
+}
+
+    
